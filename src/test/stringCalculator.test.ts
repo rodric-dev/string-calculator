@@ -12,7 +12,12 @@ describe("StringCalculator", () => {
   // });
 
   // step-3
-  test("should return sum of two comma-separated numbers", () => {
-    expect(add("1,2")).toBe(3);
-  });
+  // test("should return sum of two comma-separated numbers", () => {
+  //   expect(add("1,2")).toBe(3);
+  // });
+
+  // step-4
+  test("should handle any number of comma-separated inputs", () => {
+  expect(add("1,2,3,4,5")).toBe(15);
+});
 });

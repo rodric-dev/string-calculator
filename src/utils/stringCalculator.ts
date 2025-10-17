@@ -3,7 +3,7 @@ export function add(numbers: string): number {
   // if (!numbers) return 0;
   // return Number(numbers);
 
-  // step 3
+  // step 3 & 4
   if (!numbers) return 0;
   const parts = numbers.split(",");
   const nums = parts.map((n) => Number(n));
