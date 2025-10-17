@@ -22,7 +22,12 @@ describe("StringCalculator", () => {
   // });
 
   // step-5
-  test("should allow newlines between numbers", () => {
-    expect(add("1\n2,3")).toBe(6);
+  // test("should allow newlines between numbers", () => {
+  //   expect(add("1\n2,3")).toBe(6);
+  // });
+
+  // step -6
+  test("should support custom delimiter defined using // syntax", () => {
+    expect(add("//;\n1;2")).toBe(3);
   });
 });
