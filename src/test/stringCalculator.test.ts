@@ -17,7 +17,12 @@ describe("StringCalculator", () => {
   // });
 
   // step-4
-  test("should handle any number of comma-separated inputs", () => {
-  expect(add("1,2,3,4,5")).toBe(15);
-});
+  //   test("should handle any number of comma-separated inputs", () => {
+  //   expect(add("1,2,3,4,5")).toBe(15);
+  // });
+
+  // step-5
+  test("should allow newlines between numbers", () => {
+    expect(add("1\n2,3")).toBe(6);
+  });
 });

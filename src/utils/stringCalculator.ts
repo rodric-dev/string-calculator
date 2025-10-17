@@ -4,8 +4,14 @@ export function add(numbers: string): number {
   // return Number(numbers);
 
   // step 3 & 4
+  // if (!numbers) return 0;
+  // const parts = numbers.split(",");
+  // const nums = parts.map((n) => Number(n));
+  // return nums.reduce((a, b) => a + b, 0);
+
+  // step 5
   if (!numbers) return 0;
-  const parts = numbers.split(",");
-  const nums = parts.map((n) => Number(n));
+  const parts = numbers.split(/,|\n/);
+  const nums = parts.map(n => Number(n));
   return nums.reduce((a, b) => a + b, 0);
 }
