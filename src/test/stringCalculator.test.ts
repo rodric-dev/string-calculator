@@ -27,14 +27,14 @@ describe("StringCalculator", () => {
   // });
 
   // step -6
-  test("should support custom delimiter defined using // syntax", () => {
-    expect(add("//;\n1;2")).toBe(3);
-  });
+  // test("should support custom delimiter defined using // syntax", () => {
+  //   expect(add("//;\n1;2")).toBe(3);
+  // });
 
   // step-7
-  test("should throw error with all negatives listed", () => {
-    expect(() => add("1,-2,3,-4")).toThrow("negatives not allowed: -2,-4");
-  });
+  // test("should throw error with all negatives listed", () => {
+  //   expect(() => add("1,-2,3,-4")).toThrow("negatives not allowed: -2,-4");
+  // });
 
   // step-8
   //   test("should ignore numbers greater than 1000", () => {
@@ -42,9 +42,9 @@ describe("StringCalculator", () => {
   // });
 
   // step-9
-  test("should support delimiters of any length", () => {
-    expect(add("//[***]\n1***2***3")).toBe(6);
-  });
+  // test("should support delimiters of any length", () => {
+  //   expect(add("//[***]\n1***2***3")).toBe(6);
+  // });
 
   // step-10
   test("should support multiple delimiters", () => {

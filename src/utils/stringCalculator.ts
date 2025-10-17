@@ -102,5 +102,4 @@ export function add(numbers: string): number {
   const valid = arr.filter(n => n <= 1000);
   return valid.reduce((a, b) => a + b, 0);
 
-
 }
